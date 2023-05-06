@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TransactionDetails"
+    android:background="@color/white">
+
+
+    <RelativeLayout
+        android:id="@+id/transactionDetailsTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/savings_back">
+
+        <Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentInsetStart="0dp"
+            android:contentInsetLeft="0dp"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp">
+
+
+            <ImageButton
+                android:id="@+id/deleteData"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/ic_baseline_delete_24" />
+
+            <ImageButton
+                android:id="@+id/updateData"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/ic_baseline_edit_24" />
+
+        </Toolbar>
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:backgroundTint="#D995F4"
+            app:srcCompat="@drawable/baseline_arrow_back_24" />
+
+        <TextView
+            android:id="@+id/titleDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toolbar"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/poppinsmedium"
+            android:text="Saving\nDetails"
+            android:textColor="@color/white"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/information"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/transactionDetailsTitle"
+        android:background="@color/white"
+        android:paddingHorizontal="20dp"
+        android:paddingTop="80dp">
+
+        <TextView
+            android:id="@+id/noteTitle2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvCategoryDetails"
+            android:layout_marginTop="92dp"
+            android:drawableStart="@drawable/baseline_attach_money_24"
+            android:drawablePadding="25dp"
+            android:fontFamily="@font/poppinsmedium"
+            android:gravity="center_vertical"
+            android:text="500 000.00"
+            android:textColor="#606060"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/titleInformation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppinsmedium"
+            android:text="Saving Information"
+            android:textColor="#606060"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvTitleDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/titleInformation"
+            android:layout_marginTop="20dp"
+            android:drawableStart="@drawable/baseline_123_24"
+            android:drawablePadding="25dp"
+            android:gravity="center_vertical"
+            android:text="008520216"
+            android:textColor="#606060"
+            android:textSize="20sp"
+            android:fontFamily="@font/poppinsmedium"/>
+
+        <TextView
+            android:id="@+id/tvCategoryDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvTitleDetails"
+            android:layout_marginTop="30dp"
+            android:drawableStart="@drawable/baseline_house_24"
+            android:drawablePadding="25dp"
+            android:gravity="center_vertical"
+            android:text="Kaduwela"
+            android:textColor="#606060"
+            android:textSize="20sp"
+            android:fontFamily="@font/poppinsmedium"/>
+
+        <TextView
+            android:id="@+id/amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvCategoryDetails"
+            android:layout_marginTop="30dp"
+            android:drawableStart="@drawable/ic_baseline_notes_24"
+            android:drawablePadding="25dp"
+            android:fontFamily="@font/poppinsmedium"
+            android:gravity="center_vertical"
+            android:text="Normal Savings"
+            android:textColor="#606060"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvCategoryDetails"
+            android:layout_marginTop="152dp"
+            android:drawableStart="@drawable/baseline_attach_money_24"
+            android:drawablePadding="25dp"
+            android:fontFamily="@font/poppinsmedium"
+            android:gravity="center_vertical"
+            android:text="1 400 000.00"
+            android:textColor="#606060"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
