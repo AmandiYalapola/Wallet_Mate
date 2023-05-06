@@ -7,7 +7,7 @@
     tools:context=".fragments.TransactionFragment"
     >
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/floatingActionButton3"
+        android:id="@+id/addNewEx"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="559px"
@@ -70,6 +70,7 @@
     <!-- Bottom navigation bar code here -->
 
     <LinearLayout
+        android:id="@+id/addNewEx"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="top"
@@ -83,10 +84,9 @@
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="#ffe1e1 "
-            android:padding="15dp"
             android:layout_marginBottom="5dp"
-            >
+            android:background="#ffe1e1 "
+            android:padding="15dp">
 
             <ImageView
                 android:id="@+id/in_icon"
@@ -97,7 +97,7 @@
                 android:src="@drawable/ic_moneyout_svgrepo_com" />
 
             <TextView
-                android:id="@+id/tvCategory"
+                android:id="@+id/tvExCategory"
                 android:layout_width="222dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -110,7 +110,7 @@
                 android:textSize="17sp" />
 
             <TextView
-                android:id="@+id/tvTransactionTitle"
+                android:id="@+id/tvExTransactionTitle"
                 android:layout_width="272dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -124,7 +124,7 @@
                 android:textSize="15sp" />
 
             <TextView
-                android:id="@+id/tvAmount"
+                android:id="@+id/tvExAmount"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -137,7 +137,7 @@
                 android:textSize="18sp" />
 
             <TextView
-                android:id="@+id/tvDate"
+                android:id="@+id/tvExDate"
                 android:layout_width="96dp"
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
@@ -150,17 +150,17 @@
                 android:textSize="14sp" />
 
 
-
         </RelativeLayout>
 
         //
+
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
             android:background="#ffe1e1 "
-            android:padding="15dp"
-            android:layout_marginBottom="5dp">
+            android:padding="15dp">
 
             <ImageView
                 android:id="@+id/in_icon2"
@@ -222,7 +222,6 @@
                 android:text="22/03/2023"
                 android:textColor="#606060"
                 android:textSize="14sp" />
-
 
 
         </RelativeLayout>
@@ -366,7 +365,7 @@
                 android:src="@drawable/ic_coins_svgrepo_com" />
 
             <TextView
-                android:id="@+id/textView2"
+                android:id="@+id/totalExView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="15dp"

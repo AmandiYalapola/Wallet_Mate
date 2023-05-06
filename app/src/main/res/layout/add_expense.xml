@@ -55,7 +55,7 @@
                 android:layout_marginTop="20dp">
 
                 <EditText
-                    android:id="@+id/amount"
+                    android:id="@+id/exAmount"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/typeRadioGroup"
@@ -78,10 +78,10 @@
                 android:layout_marginTop="20dp">
 
                 <EditText
-                    android:id="@+id/title"
+                    android:id="@+id/exTitle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/amount"
+                    android:layout_below="@id/exAmount"
                     android:drawableLeft="@drawable/ic_baseline_title_24"
                     android:drawablePadding="8dp"
                     android:ems="10"
@@ -102,7 +102,7 @@
                 >
 
                 <AutoCompleteTextView
-                    android:id="@+id/category"
+                    android:id="@+id/exCategory"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawableStart="@drawable/ic_baseline_format_list_bulleted_24"
@@ -121,7 +121,7 @@
                 android:layout_marginTop="20dp">
 
                 <EditText
-                    android:id="@+id/date"
+                    android:id="@+id/exDate"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/categoryTIL"
@@ -146,10 +146,10 @@
                 android:layout_marginTop="20dp">
 
                 <EditText
-                    android:id="@+id/note"
+                    android:id="@+id/exNote"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/amount"
+                    android:layout_below="@id/exAmount"
                     android:drawableLeft="@drawable/ic_baseline_notes_24"
                     android:drawablePadding="8dp"
                     android:ems="10"
@@ -161,7 +161,7 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/saveButton"
+                android:id="@+id/exSaveButton"
                 android:layout_width="wrap_content"
                 android:layout_height="50dp"
                 android:layout_below="@+id/noteTIL"

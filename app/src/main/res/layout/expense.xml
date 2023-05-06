@@ -8,7 +8,7 @@ tools:context=".fragments."
 android:background="@color/white">
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/floatingActionButton3"
+        android:id="@+id/addNewEx"
         android:layout_width="51dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="559px"
@@ -100,7 +100,7 @@ android:background="@color/white">
                     android:src="@drawable/ic_coins_svgrepo_com" />
 
                 <TextView
-                    android:id="@+id/textView2"
+                    android:id="@+id/totalExView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="15dp"
