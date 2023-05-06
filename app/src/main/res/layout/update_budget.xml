@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/toolbarLinear"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:orientation="vertical"
+        android:background="@drawable/budget1"
+        >
+
+        <Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentInsetStart="0dp"
+            android:contentInsetLeft="0dp"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp">
+
+
+            <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:backgroundTint="#66baff"
+            app:srcCompat="@drawable/baseline_arrow_back_24" />
+
+        </Toolbar>
+
+        <TextView
+            android:layout_width="196dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="0dp"
+            android:fontFamily="@font/poppinsmedium"
+            android:paddingTop="5dp"
+            android:text="Update\nBudget Plan"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+
+
+    </LinearLayout>
+
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbarLinear">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/nameTIL"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginHorizontal="30dp"
+                        android:layout_marginTop="20dp">
+
+                        <EditText
+                            android:id="@+id/budget_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/typeRadioGroup"
+                            android:drawableLeft="@drawable/baseline_drive_file_rename_outline_24"
+                            android:drawablePadding="8dp"
+                            android:ems="10"
+                            android:hint="Budget Name"
+                            android:inputType="text"
+                            android:textColor="@color/black" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/budgetTIL"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginHorizontal="30dp"
+                        android:layout_marginTop="20dp">
+
+                        <EditText
+                            android:id="@+id/budget_limit"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/nameTIL"
+                            android:drawableLeft="@drawable/ic_baseline_attach_money_24"
+                            android:drawablePadding="8dp"
+                            android:ems="10"
+                            android:hint="Budget Limit"
+                            android:inputType="numberDecimal"
+                            android:textColor="@color/black" />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/incomeTIL"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/budgetTIL"
+                        android:layout_marginHorizontal="30dp"
+                        android:layout_marginTop="20dp">
+
+                        <EditText
+                            android:id="@+id/monthly_income"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/ic_baseline_attach_money_24"
+                            android:drawablePadding="8dp"
+                            android:ems="10"
+                            android:hint="Expected Income"
+                            android:inputType="numberDecimal"
+                            android:textColor="@color/black" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/foodTIL"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="5dp"
+
+                            android:layout_weight="1">
+
+                            <EditText
+                                android:id="@+id/food"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:drawableLeft="@drawable/baseline_fastfood_24"
+                                android:drawablePadding="8dp"
+                                android:ems="10"
+                                android:hint="Food"
+                                android:inputType="numberDecimal"
+                                android:textColor="@color/black" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/travelTIL"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="30dp"
+                            android:layout_weight="1">
+
+                            <EditText
+                                android:id="@+id/travel"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:drawableLeft="@drawable/baseline_mode_of_travel_24"
+                                android:drawablePadding="8dp"
+                                android:ems="10"
+                                android:hint="Travel"
+                                android:inputType="numberDecimal"
+                                android:textColor="@color/black" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/shoppingTIL"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+
+                            android:gravity="left">
+
+                            <EditText
+                                android:id="@+id/shopping"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:drawableLeft="@drawable/baseline_shopping_bag_24"
+                                android:drawablePadding="8dp"
+                                android:ems="10"
+                                android:hint="Shopping"
+                                android:inputType="numberDecimal"
+                                android:textColor="@color/black" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/healthTIL"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginLeft="5dp"
+
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="30dp"
+                            android:layout_weight="1">
+
+                            <EditText
+                                android:id="@+id/health"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_weight="1"
+                                android:drawableLeft="@drawable/baseline_health_and_safety_24"
+                                android:drawablePadding="8dp"
+                                android:ems="10"
+                                android:hint="Health"
+                                android:inputType="numberDecimal"
+                                android:textColor="@color/black" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/billsTIL"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="5dp"
+
+                            android:layout_weight="1">
+
+                            <EditText
+                                android:id="@+id/bills"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:drawableLeft="@drawable/baseline_list_alt_24"
+                                android:drawablePadding="8dp"
+                                android:ems="10"
+                                android:hint="Bills"
+                                android:inputType="numberDecimal"
+                                android:textColor="@color/black" />
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:id="@+id/otherTIL"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="30dp"
+                            android:layout_weight="1">
+
+                            <EditText
+                                android:id="@+id/other"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:drawableLeft="@drawable/baseline_library_add_24"
+                                android:drawablePadding="8dp"
+                                android:ems="10"
+                                android:hint="Other"
+                                android:inputType="numberDecimal"
+                                android:textColor="@color/black" />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+                    </LinearLayout>
+
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/saveButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:backgroundTint="#66baff"
+                        android:paddingHorizontal="30dp"
+                        android:text="Update Budget"
+                        android:textColor="@color/white"
+                        android:textSize="15sp"
+                        app:cornerRadius="20dp" />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
