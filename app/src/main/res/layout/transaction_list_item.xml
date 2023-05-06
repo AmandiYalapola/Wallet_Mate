@@ -42,7 +42,7 @@
                 android:layout_marginTop="3dp"
                 android:fontFamily="@font/poppinsmedium"
                 android:gravity="left"
-                android:text="Category"
+                android:text="Salary"
                 android:textColor="@color/black"
                 android:textSize="17sp" />
 
@@ -54,7 +54,7 @@
                 android:layout_marginTop="27dp"
                 android:fontFamily="@font/poppinsmedium"
                 android:gravity="left"
-                android:text="Transaction Title"
+                android:text="February Salary"
                 android:textColor="#606060"
                 android:textSize="15sp" />
 
@@ -67,7 +67,7 @@
                 android:layout_marginTop="2dp"
                 android:fontFamily="@font/poppinsmedium"
                 android:gravity="right"
-                android:text="99999.99"
+                android:text="120000.00"
                 android:textColor="@color/black"
                 android:textSize="18sp"
                 />
@@ -81,7 +81,7 @@
                 android:layout_marginTop="28dp"
                 android:fontFamily="@font/poppinsmedium"
                 android:gravity="right"
-                android:text="31/12/2022"
+                android:text="05/03/2023"
                 android:textColor="#606060"
                 android:textSize="14sp" />
 

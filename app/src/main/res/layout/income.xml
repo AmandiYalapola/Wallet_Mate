@@ -13,10 +13,12 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="559px"
         android:layout_marginTop="600dp"
+        android:layout_marginRight="15dp"
+        android:layout_gravity="right"
         android:clickable="true"
         android:src="@drawable/baseline_add_24"
-        app:shapeAppearanceOverlay="@style/RoundedCorner"
-    />
+        app:backgroundTint="#d9d9d9"
+        app:shapeAppearanceOverlay="@style/RoundedCorner" />
 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appBarLayout2"
@@ -51,7 +53,7 @@
                         android:layout_marginStart="15dp"
                         android:layout_marginTop="17dp"
                         android:fontFamily="@font/poppinsbold"
-                        android:text="Hi, Nuwan!"
+                        android:text="Hello there!"
                         android:textColor="@color/white"
                         android:textSize="17sp" />
 
@@ -104,7 +106,7 @@
                         android:layout_marginStart="15dp"
                         android:layout_marginTop="55dp"
                         android:fontFamily="@font/poppinsmedium"
-                        android:text="LKR : +120000.00"
+                        android:text="LKR : 0.00"
                         android:textColor="@color/white"
                         android:textSize="25sp" />
 
