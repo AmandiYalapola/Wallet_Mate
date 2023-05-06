@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "144024992757",
+    "firebase_url": "https://wallet-mate-8e8e9-default-rtdb.firebaseio.com",
+    "project_id": "wallet-mate-8e8e9",
+    "storage_bucket": "wallet-mate-8e8e9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:144024992757:android:428d32167bfb0174a0bebc",
+        "android_client_info": {
+          "package_name": "com.example.wallet_mate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "144024992757-c2dp5c1523gng1g35it1b17p7854lgl1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwYOPwUpZ98ElaGgPx73gcQUXl2G5DvRg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "144024992757-c2dp5c1523gng1g35it1b17p7854lgl1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
