@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".InsertionActivity">
+    tools:context=".IncomeAddActivity">
 
     <LinearLayout
         android:id="@+id/toolbarLinear"
@@ -15,7 +15,7 @@
         >
 
         <ImageButton
-            android:id="@+id/imageButton"
+            android:id="@+id/incomebackBtn"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:backgroundTint="#2ECC71"
@@ -55,7 +55,7 @@
                 android:layout_marginTop="20dp">
 
                 <EditText
-                    android:id="@+id/amount"
+                    android:id="@+id/incomeamount"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/typeRadioGroup"
@@ -78,10 +78,10 @@
                 android:layout_marginTop="20dp">
 
                 <EditText
-                    android:id="@+id/title"
+                    android:id="@+id/incometitle"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/amount"
+                    android:layout_below="@id/incomeamount"
                     android:drawableLeft="@drawable/ic_baseline_title_24"
                     android:drawablePadding="8dp"
                     android:ems="10"
@@ -102,13 +102,14 @@
                 >
 
                 <AutoCompleteTextView
-                    android:id="@+id/category"
+                    android:id="@+id/incomecategory"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:drawableStart="@drawable/ic_baseline_format_list_bulleted_24"
                     android:drawablePadding="8dp"
                     android:hint="Category"
-                    android:inputType="none" />
+                    android:inputType="text"></AutoCompleteTextView>
+<!--                    android:inputType="none" />-->
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
@@ -121,7 +122,7 @@
                 android:layout_marginTop="20dp">
 
                 <EditText
-                    android:id="@+id/date"
+                    android:id="@+id/incomedate"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/categoryTIL"
@@ -146,10 +147,10 @@
                 android:layout_marginTop="20dp">
 
                 <EditText
-                    android:id="@+id/note"
+                    android:id="@+id/incomenote"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/amount"
+                    android:layout_below="@id/incometitle"
                     android:drawableLeft="@drawable/ic_baseline_notes_24"
                     android:drawablePadding="8dp"
                     android:ems="10"
@@ -161,7 +162,7 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/saveButton"
+                android:id="@+id/insaveButton"
                 android:layout_width="wrap_content"
                 android:layout_height="50dp"
                 android:layout_below="@+id/noteTIL"

@@ -23,6 +23,13 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
+            <ImageButton
+                android:id="@+id/RegBackbtn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:backgroundTint="#FFFFFF"
+                app:srcCompat="@drawable/baseline_arrow_back_24" />
+
             <ImageView
                 android:id="@+id/logo"
                 android:layout_width="295dp"
@@ -60,7 +67,7 @@
                     android:src="@drawable/ic_baseline_person_outline_24" />
 
                 <EditText
-                    android:id="@+id/email"
+                    android:id="@+id/rename"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
@@ -90,7 +97,7 @@
                     android:src="@drawable/baseline_email_24" />
 
                 <EditText
-                    android:id="@+id/password"
+                    android:id="@+id/reemail"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
@@ -120,7 +127,7 @@
                     android:src="@drawable/ic_baseline_lock_open_24" />
 
                 <EditText
-                    android:id="@+id/passwordRetype"
+                    android:id="@+id/repassword"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
@@ -150,7 +157,7 @@
                     android:src="@drawable/ic_baseline_lock_open_24" />
 
                 <EditText
-                    android:id="@+id/email2"
+                    android:id="@+id/repasswordretype"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
