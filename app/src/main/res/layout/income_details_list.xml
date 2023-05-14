@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.TransactionFragment"
+    tools:context=".IncomeDisplayActivity"
    >
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/floatingActionButton3"
@@ -70,6 +70,7 @@
     <!-- Bottom navigation bar code here -->
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="top"
@@ -79,151 +80,13 @@
         android:orientation="vertical"
         android:padding="10dp">
 
-
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="5dp"
-            android:background="@drawable/relative_border"
-            android:padding="15dp">
-
-            <ImageView
-                android:id="@+id/in_icon"
-                android:layout_width="47dp"
-                android:layout_height="47dp"
-                android:layout_marginStart="3dp"
-                android:layout_marginEnd="13dp"
-                android:src="@drawable/ic_moneyin_svgrepo_com" />
-
-            <TextView
-                android:id="@+id/tvCategory"
-                android:layout_width="222dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="3dp"
-                android:layout_toRightOf="@id/in_icon"
-                android:fontFamily="@font/poppinsmedium"
-                android:gravity="left"
-                android:text="Salary"
-                android:textColor="@color/black"
-                android:textSize="17sp" />
-
-            <TextView
-                android:id="@+id/tvTransactionTitle"
-                android:layout_width="272dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="27dp"
-
-                android:layout_toRightOf="@id/in_icon"
-                android:fontFamily="@font/poppinsmedium"
-                android:gravity="left"
-                android:text="March Salary"
-                android:textColor="#606060"
-                android:textSize="15sp" />
-
-            <TextView
-                android:id="@+id/tvAmount"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginLeft="120dp"
-                android:layout_marginTop="2dp"
-                android:fontFamily="@font/poppinsmedium"
-                android:gravity="right"
-                android:text="120000.00"
-                android:textColor="@color/black"
-                android:textSize="18sp" />
-
-            <TextView
-                android:id="@+id/tvDate"
-                android:layout_width="96dp"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_gravity="center"
-                android:layout_marginTop="28dp"
-                android:fontFamily="@font/poppinsmedium"
-                android:gravity="right"
-                android:text="25/03/2023"
-                android:textColor="#606060"
-                android:textSize="14sp" />
-
-
-        </RelativeLayout>
-
-        //
-
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="5dp"
-            android:background="@drawable/relative_border"
-            android:padding="15dp">
-
-            <ImageView
-                android:id="@+id/in_icon2"
-                android:layout_width="47dp"
-                android:layout_height="47dp"
-                android:layout_marginStart="3dp"
-                android:layout_marginEnd="13dp"
-                android:src="@drawable/ic_moneyin_svgrepo_com" />
-
-            <TextView
-                android:id="@+id/tvCategory2"
-                android:layout_width="222dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="3dp"
-                android:layout_toRightOf="@id/in_icon2"
-                android:fontFamily="@font/poppinsmedium"
-                android:gravity="left"
-                android:text="Rental"
-                android:textColor="@color/black"
-                android:textSize="17sp" />
-
-            <TextView
-                android:id="@+id/tvTransactionTitle2"
-                android:layout_width="272dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="27dp"
-
-                android:layout_toRightOf="@id/in_icon2"
-                android:fontFamily="@font/poppinsmedium"
-                android:gravity="left"
-                android:text="April Rental"
-                android:textColor="#606060"
-                android:textSize="15sp" />
-
-            <TextView
-                android:id="@+id/tvAmount2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginLeft="120dp"
-                android:layout_marginTop="2dp"
-                android:fontFamily="@font/poppinsmedium"
-                android:gravity="right"
-                android:text="40000.00"
-                android:textColor="@color/black"
-                android:textSize="18sp" />
-
-            <TextView
-                android:id="@+id/tvDate2"
-                android:layout_width="96dp"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_gravity="center"
-                android:layout_marginTop="28dp"
-                android:fontFamily="@font/poppinsmedium"
-                android:gravity="right"
-                android:text="10/04/2023"
-                android:textColor="#606060"
-                android:textSize="14sp" />
-
-
-        </RelativeLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/incomerv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            tools:listitem="@layout/transaction_list_item" />
     </LinearLayout>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
@@ -364,13 +227,13 @@
                 android:src="@drawable/ic_coins_svgrepo_com" />
 
             <TextView
-                android:id="@+id/textView2"
+                android:id="@+id/toalin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="15dp"
                 android:layout_marginTop="55dp"
                 android:fontFamily="@font/poppinsmedium"
-                android:text="LKR : +140000.00"
+                android:text="LKR : "
                 android:textColor="@color/white"
                 android:textSize="25sp" />
 

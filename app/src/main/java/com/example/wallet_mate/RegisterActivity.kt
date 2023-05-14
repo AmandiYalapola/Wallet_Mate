@@ -108,8 +108,8 @@ class RegisterActivity : AppCompatActivity() {
 
         val hashMap: HashMap<String, Any?> = HashMap()
         hashMap["uid"] = uid
-        hashMap["email"] = name
-        hashMap["name"] = email
+        hashMap["name"] = name
+        hashMap["email"] = email
         hashMap["timestamp"] = timestamp
 
         val ref = FirebaseDatabase.getInstance().getReference("Users")

@@ -13,7 +13,10 @@
         android:theme="@style/Theme.Wallet_Mate"
         tools:targetApi="31">
         <activity
-            android:name=".AddIncomeActivity"
+            android:name=".EditIncomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".IncomeDisplayActivity"
             android:exported="false" />
         <activity
             android:name=".IncomeActivity"

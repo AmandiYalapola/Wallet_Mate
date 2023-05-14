@@ -1,5 +1,17 @@
 <resources>
     <string name="app_name">Wallet_Mate</string>
     <string name="new_user_sign_up">Sign Up</string>
+    <string name="category">Category</string>
+    <string-array name="category">
+        <item>Salary</item>
+        <item>Award</item>
+        <item>Gift</item>
+        <item>Investment Return</item>
+        <item>Rent</item>
+        <item>Refunds</item>
+        <item>Sales</item>
+        <item>Coupons</item>
+        <item>Other Income</item>
+    </string-array>
 
 </resources>

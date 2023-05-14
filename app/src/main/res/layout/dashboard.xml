@@ -30,7 +30,9 @@
         android:orientation="horizontal"
         android:layout_margin="10dp"
         android:gravity="center">
+
         <androidx.cardview.widget.CardView
+            android:id="@+id/ivincome1"
             android:layout_width="160dp"
             android:layout_height="190dp"
             android:padding="3dp"
@@ -47,7 +49,7 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:id="@+id/ivincome1"
+
                     android:layout_width="64dp"
                     android:layout_height="64dp"
                     android:background="@drawable/cercleshape"

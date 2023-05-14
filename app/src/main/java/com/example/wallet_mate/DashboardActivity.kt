@@ -1,5 +1,4 @@
 package com.example.wallet_mate
-
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -24,11 +23,11 @@ class DashboardActivity : AppCompatActivity() {
             startActivity(Intent(this,MainActivity::class.java))
            finish()
         }
+
         binding.ivincome1.setOnClickListener{
-
-            startActivity(Intent(this,IncomeActivity::class.java))
-
+            startActivity(Intent(this,IncomeDisplayActivity::class.java))
         }
+
     }
 
     private fun checkUser() {

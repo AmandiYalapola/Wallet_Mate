@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="75dp"
+    android:layout_width="400dp"
+    android:layout_height="100dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     app:cardCornerRadius="15dp"
     android:layout_marginBottom="10dp"
@@ -12,22 +12,23 @@
     app:cardElevation="0dp">
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:padding="10dp"
+        android:layout_width="411dp"
+        android:layout_height="100dp"
         android:layout_gravity="center"
+        android:layout_marginTop="12dp"
+        android:background="@color/white"
+        android:gravity="center"
         android:orientation="horizontal"
-        android:background="@color/white">
+        android:padding="10dp">
 
         <ImageView
             android:id="@+id/typeIcon"
-            android:layout_width="47dp"
-            android:layout_height="47dp"
-            android:src="@drawable/ic_moneyin_svgrepo_com"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginBottom="20dp"
             android:layout_marginEnd="13dp"
-            android:layout_marginStart="3dp"
-            />
+            android:src="@drawable/ic_moneyin_svgrepo_com" />
 
         <RelativeLayout
             android:layout_width="wrap_content"
@@ -39,7 +40,7 @@
                 android:layout_width="222dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginTop="3dp"
+                android:layout_marginTop="0dp"
                 android:fontFamily="@font/poppinsmedium"
                 android:gravity="left"
                 android:text="Salary"
@@ -47,7 +48,7 @@
                 android:textSize="17sp" />
 
             <TextView
-                android:id="@+id/tvTransactionTitle"
+                android:id="@+id/tvtitle"
                 android:layout_width="272dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -60,17 +61,17 @@
 
             <TextView
                 android:id="@+id/tvAmount"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginLeft="120dp"
+                android:layout_marginLeft="150dp"
                 android:layout_marginTop="2dp"
+                android:layout_marginRight="10dp"
                 android:fontFamily="@font/poppinsmedium"
-                android:gravity="right"
+
                 android:text="120000.00"
                 android:textColor="@color/black"
-                android:textSize="18sp"
-                />
+                android:textSize="18sp" />
 
             <TextView
                 android:id="@+id/tvDate"
@@ -79,11 +80,37 @@
                 android:layout_alignParentRight="true"
                 android:layout_gravity="center"
                 android:layout_marginTop="28dp"
+                android:layout_marginRight="140dp"
                 android:fontFamily="@font/poppinsmedium"
                 android:gravity="right"
                 android:text="05/03/2023"
                 android:textColor="#606060"
                 android:textSize="14sp" />
+
+            <ImageButton
+                android:id="@+id/deleteimageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="200dp"
+                android:layout_marginBottom="300dp"
+                android:backgroundTint="@color/white"
+                app:srcCompat="@drawable/ic_baseline_delete_24" />
+
+            <ImageButton
+                android:id="@+id/imageButtonedit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/white"
+                android:layout_marginTop="25dp"
+             android:layout_marginLeft="200dp"
+                app:srcCompat="@drawable/baseline_edit_24" />
+
+            <TextView
+                android:id="@+id/tvnote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvtitle"
+                android:text="TextView" />
 
         </RelativeLayout>
 
