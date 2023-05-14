@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.TransactionFragment"
+    tools:context=".ExpenseDisplayActivity"
     >
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/addNewEx"
+        android:id="@+id/addNewExDL"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="559px"
-        android:layout_marginTop="600dp"
+        android:layout_marginTop="850dp"
         android:layout_marginRight="15dp"
         android:layout_gravity="right"
         android:clickable="true"
@@ -70,7 +70,7 @@
     <!-- Bottom navigation bar code here -->
 
     <LinearLayout
-        android:id="@+id/addNewEx"
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="top"
@@ -80,151 +80,13 @@
         android:orientation="vertical"
         android:padding="10dp">
 
-
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="5dp"
-            android:background="#ffe1e1 "
-            android:padding="15dp">
-
-            <ImageView
-                android:id="@+id/in_icon"
-                android:layout_width="54dp"
-                android:layout_height="54dp"
-                android:layout_marginStart="3dp"
-                android:layout_marginEnd="13dp"
-                android:src="@drawable/ic_moneyout_svgrepo_com" />
-
-            <TextView
-                android:id="@+id/tvExCategory"
-                android:layout_width="222dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="3dp"
-                android:layout_toRightOf="@id/in_icon"
-                android:fontFamily="@font/poppinsmedium"
-                android:gravity="left"
-                android:text="Food"
-                android:textColor="@color/black"
-                android:textSize="17sp" />
-
-            <TextView
-                android:id="@+id/tvExTransactionTitle"
-                android:layout_width="272dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="27dp"
-
-                android:layout_toRightOf="@id/in_icon"
-                android:fontFamily="@font/poppinsmedium"
-                android:gravity="left"
-                android:text="Lunch"
-                android:textColor="#606060"
-                android:textSize="15sp" />
-
-            <TextView
-                android:id="@+id/tvExAmount"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginLeft="120dp"
-                android:layout_marginTop="2dp"
-                android:fontFamily="@font/poppinsmedium"
-                android:gravity="right"
-                android:text="400.00"
-                android:textColor="@color/black"
-                android:textSize="18sp" />
-
-            <TextView
-                android:id="@+id/tvExDate"
-                android:layout_width="96dp"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_gravity="center"
-                android:layout_marginTop="28dp"
-                android:fontFamily="@font/poppinsmedium"
-                android:gravity="right"
-                android:text="21/03/2023"
-                android:textColor="#606060"
-                android:textSize="14sp" />
-
-
-        </RelativeLayout>
-
-        //
-
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_marginBottom="5dp"
-            android:background="#ffe1e1 "
-            android:padding="15dp">
-
-            <ImageView
-                android:id="@+id/in_icon2"
-                android:layout_width="47dp"
-                android:layout_height="47dp"
-                android:layout_marginStart="3dp"
-                android:layout_marginEnd="13dp"
-                android:src="@drawable/ic_moneyout_svgrepo_com" />
-
-            <TextView
-                android:id="@+id/tvCategory2"
-                android:layout_width="222dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="3dp"
-                android:layout_toRightOf="@id/in_icon2"
-                android:fontFamily="@font/poppinsmedium"
-                android:gravity="left"
-                android:text="Shopping"
-                android:textColor="@color/black"
-                android:textSize="17sp" />
-
-            <TextView
-                android:id="@+id/tvTransactionTitle2"
-                android:layout_width="272dp"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="27dp"
-
-                android:layout_toRightOf="@id/in_icon2"
-                android:fontFamily="@font/poppinsmedium"
-                android:gravity="left"
-                android:text="Clothes"
-                android:textColor="#606060"
-                android:textSize="15sp" />
-
-            <TextView
-                android:id="@+id/tvAmount2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginLeft="120dp"
-                android:layout_marginTop="2dp"
-                android:fontFamily="@font/poppinsmedium"
-                android:gravity="right"
-                android:text="12000.00"
-                android:textColor="@color/black"
-                android:textSize="18sp" />
-
-            <TextView
-                android:id="@+id/tvDate2"
-                android:layout_width="96dp"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_gravity="center"
-                android:layout_marginTop="28dp"
-                android:fontFamily="@font/poppinsmedium"
-                android:gravity="right"
-                android:text="22/03/2023"
-                android:textColor="#606060"
-                android:textSize="14sp" />
-
-
-        </RelativeLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/expenserv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            tools:listitem="@layout/transaction_list_item" />
     </LinearLayout>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
@@ -371,7 +233,7 @@
                 android:layout_marginStart="15dp"
                 android:layout_marginTop="55dp"
                 android:fontFamily="@font/poppinsmedium"
-                android:text="LKR : -12400.00"
+                android:text="LKR : 0.00"
                 android:textColor="@color/white"
                 android:textSize="25sp" />
 
